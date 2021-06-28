@@ -22,6 +22,15 @@ create: (id, comment) => {
     });
 },
 
+bulkCreate: async (id, comments) => {
+
+  // Agrego a cada uno de los comentarios el ID de tutorial.
+  comments.forEach(comment => comment.tutorialId = id);
+
+  // Rafaga de Creates.
+  return await db.Comment.bulkCreate(comments);
+},
+
 // Buscar un comentario por Id
 findCommentById : (id) => {
   return db.Comment.findByPk(id, { include: ["Tutorial"] })
