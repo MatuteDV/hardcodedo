@@ -20,11 +20,11 @@ Para el método up haremos uso de **queryInterface.bulkInsert()**, al que le pas
 
 `await queryInterface.bulkInsert('Tutorials', [ { id: 1, title: 'tuto01', description: 'Desc tuto01' }, { id: 2, title: 'tuto02', description: 'Desc tuto02' } ]);`
 
-Para el método down haremos uso de queryInterface.bulkDelete(), al que le pasaremos el nombre de la tabla que queremos vaciar. 
+Para el método down haremos uso de **queryInterface.bulkDelete()**, al que le pasaremos el nombre de la tabla que queremos vaciar.
 
 `await queryInterface.bulkDelete('Tutorials');`
 
-* Para hacer uso de un seed, usaremos sequelize-cli nuevamente. Mediante sequelize`db:seed:all --debug` correremos todos los seeders, y en orden, que tengamos en la carpeta  /**seeders**. Y el la bandera (parametro) "--debug" es para activar, que si ocurre un error, nos muestre por consola el error.
+* Para hacer uso de un seed, usaremos sequelize-cli nuevamente. Mediante sequelize`db:seed:all --debug` correremos todos los seeders, y en orden, que tengamos en la carpeta  /**seeders**. Y la bandera (parametro) "--debug" es para activar, que si ocurre un error, nos muestre por consola el error.
 
 ## .bulkCreate()
 
