@@ -30,4 +30,4 @@ Para el método down haremos uso de **queryInterface.bulkDelete()**, al que le p
 
 El método bulkCreate() sirve para hacer *N* **.create()** en una sola instrucción. Así como pasamos un objeto literal en un create(), aquí pasaremos un array de objetos literales para obtener tantos create() como elementos del array.
 
-El método se ejecuta a partir de un modelo al igal que el create **db.Model.bulkCreate()**.
+El método se ejecuta a partir de un modelo, al igual que el create, **db.Model.bulkCreate()**.
